@@ -1,0 +1,535 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+ 
+main div{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+:root{
+    --orange: #F3603C;
+    --dark-blue: #232C50;
+    --light-grey: #B3B2B7;
+    --sm: 1.5rem;
+    --smd: 1.8rem;
+    --md: 3.5rem;
+    --lg: 5rem;
+}
+.logo{
+    height: 2rem;  
+    align-self: center;  
+}
+
+.btn-orange{
+    background-color: var(--orange);
+    border: none;
+    
+    border-radius: 3.125rem;
+    width: 12rem;
+    height: 4rem;
+}
+.btn-orange a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-orange:hover {
+    opacity: 0.5;
+}
+
+.btn-white{
+    background-color: white;
+    border: none;
+    border-radius: 3.125rem;
+    width: 12rem;
+    height: 4rem;
+}
+.btn-white a{
+    text-decoration: none;
+    color: var(--orange);
+}
+.btn-white:hover {
+    opacity: 0.5;
+}
+.btn-number{
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    border-radius: 3.125rem;
+    width: 6rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+header{
+    display: flex;
+    width: 100%;
+    font-size: var(--sm);
+    justify-content: space-between;
+    padding: 3rem 6rem;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 1.5rem;
+    
+}
+header ul a:hover{
+    opacity: 0.5;
+}
+ header .menu-mobile{
+    width:3rem;
+    height: 3rem;
+   align-self: center;
+   display: none;
+   
+ }
+
+.container{
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container >div{
+    height: auto;
+    width: 40%;
+    border-color: black;
+    margin: 1rem;
+}
+
+
+
+.brin {
+    padding-top: 7rem;
+}
+.brin h1{
+    font-size: var(--lg);
+    color: var(--dark-blue);
+    padding-right: 7rem;
+}
+
+.brin p{
+    margin-top:4rem;
+    margin-bottom:4rem;
+    font-size: var(--sm);
+    padding-right: 23rem;
+}
+
+
+.what{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+.what h1{
+    font-size: var(--md);
+    color: var(--dark-blue);
+    padding-right: 7rem;
+}
+
+.what p{
+    margin-top:4rem;
+    margin-bottom:4rem;
+    font-size: var(--sm);
+    padding-right: 18rem;
+}
+
+.card{
+    margin-top:4rem;
+    display: flex;
+    margin-bottom: 3rem;
+}
+.card h2{
+    color: var(--dark-blue);
+    font-size: var(--smd);
+    margin-bottom: 2rem;
+}
+
+.card p{
+    font-size: var(--sm);
+    color: var(--light-grey)
+}
+
+.pd-card{
+    margin-top:10rem;
+}
+
+.container-profile{
+    display: flex;
+    margin-top:12rem;
+    flex-direction: column;
+    margin-left:15rem;
+    margin-right:15rem;
+   
+    
+}
+
+.container-profile .profiles{
+    display: flex;
+    margin-top: 12rem;
+    align-items: center;
+    width:120rem;
+    width:100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+   
+}
+.container-profile .profiles .profile{
+    background: #FAFAFA;
+    align-items: center;
+    height:30rem;
+    padding-top:8rem;
+    position: relative;
+}
+.container-profile h1{
+   
+    font-size: var(--md);
+    text-align: center;
+    color: var(--dark-blue);
+}
+.container-profile h2{
+    font-size: var(--smd);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.container-profile p{
+    font-size: var(--sm);
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--light-grey);
+}
+
+.container-profile .btn-orange{
+    margin-top: 4rem;
+    align-self: center;
+}
+
+.container-profile .profiles .profile img{
+   position: absolute;
+    left: 11.5rem;
+    bottom:26rem;
+    height: 9rem;
+}
+.slider{
+    display: none;
+}
+.pre-foot{
+    background-color: var(--orange);
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.pre-foot h2{
+    font-size: var(--md);
+    color: white;
+}
+
+.pre-foot .phara{
+    padding-left: 8rem;
+    padding-right: 12rem;
+    width: 50%;
+}
+
+.pre-foot .btn-foot{
+    width:30%;
+    padding-left: 6rem;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    font-size: var(--sm);
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    background-color: #1E1E26;
+    height: 20rem;
+    color: white;
+}
+
+.form-foot{
+    display: flex;
+    align-items: center;
+    margin-bottom:5rem;
+
+}
+.form-foot button{
+    width: 6rem;
+    margin-left: 2rem;
+}
+.form-foot input{
+    border-radius: 3.125rem;
+    height: 4rem;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+} 
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+} 
+
+footer p{
+    font-size: 1rem;
+    text-align: right;
+}
+footer ul a:hover{
+    color: var(--orange);
+}
+footer .logo{
+    margin-bottom:3rem;
+}
+
+footer .icon:hover{
+    background-color: var(--orange);
+}
+.foot-nav{
+    display: flex;
+    justify-content: start;
+}
+.foot-nav div{
+    margin-right:10rem;
+}
+ 
+@media (max-width: 560px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+   
+    header{
+        display: flex;
+        width: 100%;
+        font-size: var(--sm);
+        justify-content: space-between;
+        padding: 3rem 2rem;
+    }
+    
+    header ul{
+        display: none;
+        list-style: none;
+        align-items: center;
+    }
+    
+    header ul a{
+        text-decoration: none;
+        color: var(--dark-blue);
+        padding: 1.5rem;
+        
+    }
+     header .menu-mobile{
+        width:3rem;
+        height: 3rem;
+       align-self: center;
+       display: block;
+     }
+    
+     header .btn-orange{
+        display: none;
+     }
+    
+    
+    .item2{
+        order: -1;
+    }
+    .container{
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container >div{
+        width: 100%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .brin {
+        padding-top: 3rem;
+    }
+    .brin h1{
+        font-size: var(--lg);
+        color: var(--dark-blue);
+        padding: 3rem 2rem;
+    }
+    
+    .brin p, .what p{
+        margin-top:2rem;
+        margin-bottom:4rem;
+        font-size: var(--sm);
+        padding: 0rem 2rem;
+    }
+    .what{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .what h1{
+        font-size: var(--md);
+        color: var(--dark-blue);
+        padding: 3rem 2rem;
+    }
+    .card{
+        margin-top:0rem;
+        display: flex;
+        margin-bottom: 3rem;
+    }
+    .card h2{
+        color: var(--dark-blue);
+        font-size: var(--smd);
+        margin-bottom: 2rem;
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+    
+    .card p{
+        font-size: var(--sm);
+        color: var(--light-grey);
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+    
+    .container .item .pd-card{
+        margin-top:0rem;
+    }
+    .btn-number{
+        margin-right: 0rem;
+    }
+    .container-profile{
+        display: flex;
+        margin-top:4rem;
+        flex-direction: column;
+        margin-left:10rem;
+        margin-right:10rem;
+    }
+    
+    
+    .container-profile .profiles{
+        display: flex;
+        margin-top: 12rem;
+        align-items: center;
+        width:100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+       
+    }
+    .container-profile .profiles .profile{
+        background: #FAFAFA;
+        align-items: center;
+        height:30rem;
+        padding-top:8rem;
+        position: relative;
+        display: none;
+    }
+    #perfil-show{
+        display: block;
+    }
+    .container-profile h1{
+       
+        font-size: var(--md);
+        text-align: center;
+        color: var(--dark-blue);
+    }
+    .container-profile h2{
+        font-size: var(--smd);
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .container-profile p{
+        font-size: var(--sm);
+        text-align: center;
+        margin-bottom: 2rem;
+        color: var(--light-grey);
+    }
+    
+    .container-profile .btn-orange{
+        margin-top: 4rem;
+        align-self: center;
+    }
+    
+    .container-profile .profiles .profile img{
+       position: absolute;
+        left: 12rem;
+        bottom:26rem;
+        height: 9rem;
+    }
+    .profile1{
+        display: none;
+    }
+    .slider{
+        width: 4rem;
+        align-self: center;
+        display: block;
+    }
+    .pre-foot{
+        background-color: var(--orange);
+        display: flex; 
+        justify-content: center;
+        flex-direction: column; 
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-top: 8rem;
+    }
+    
+    .pre-foot h2{
+        font-size: var(--md);
+        color: white;
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+    .pre-foot .phara{
+        padding-left: 0;
+        padding-right: 0rem;
+    }
+    
+    .pre-foot .btn-foot{
+        width:30%;
+       padding-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        height: auto;
+        font-size: var(--sm);
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem 6rem;
+        background-color: #1E1E26;
+       
+        color: white;
+    }
+    .item5{
+        margin-bottom: 2rem;
+    }
+    .item4{
+        margin-bottom: 2rem;
+    }
+}
